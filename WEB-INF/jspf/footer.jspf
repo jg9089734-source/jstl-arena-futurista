@@ -1,0 +1,16 @@
+  </main>
+
+  <footer class="arena-footer">
+    <span><i class="bi bi-lightning-charge-fill"></i> JSTL//ARENA</span>
+    <span class="footer-dot">&diams;</span>
+    <span>JSP + JSTL 1.2 &middot; Tomcat 8.5</span>
+    <span class="footer-dot">&diams;</span>
+    <span>8 niveles para dominar los tags</span>
+  </footer>
+
+  <div class="toast-container position-fixed bottom-0 end-0 p-3" id="arena-toasts"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="${ctx}/js/gamer.js"></script>
+</body>
+</html>
