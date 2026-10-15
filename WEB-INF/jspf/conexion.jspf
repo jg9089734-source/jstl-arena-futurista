@@ -1,6 +1,15 @@
-<%-- Conexion a la base de datos MySQL/MariaDB de ejemplo (base "empleados") --%>
+
+<%-- Leer las variables de entorno configuradas en Railway --%>
+<%
+    pageContext.setAttribute("dbHost", System.getenv("DB_HOST"));
+    pageContext.setAttribute("dbPort", System.getenv("DB_PORT"));
+    pageContext.setAttribute("dbName", System.getenv("DB_NAME"));
+    pageContext.setAttribute("dbUser", System.getenv("DB_USER"));
+    pageContext.setAttribute("dbPassword", System.getenv("DB_PASSWORD"));
+%>
+
 <sql:setDataSource var="empleados"
                    driver="com.mysql.jdbc.Driver"
-                   url="jdbc:mysql://localhost:3306/empleados?useUnicode=true&amp;characterEncoding=UTF-8"
-                   user="root"
-                   password="" />
+                   url="jdbc:mysql://${dbHost}:${dbPort}/${dbName}?useUnicode=true&amp;characterEncoding=UTF-8"
+                   user="${dbUser}"
+                   password="${dbPassword}" />
