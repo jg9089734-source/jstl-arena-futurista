@@ -1,4 +1,3 @@
-```jsp
 <%-- Conexion a MySQL en Clever Cloud desde Railway --%>
 <%
     String dbHost = System.getenv("DB_HOST");
@@ -28,4 +27,3 @@
     user="${dbUser}"
     password="${dbPassword}"
 />
-```
